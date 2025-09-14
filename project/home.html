@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html documentation</title>
+</head>
+
+<body>
+    <h1> WEB DEVELOPMENT COURSE</h1>
+    <ol>
+        <li>
+            <h2> What is the Internet?</h2>
+            <p>The Internet is a global network of interconnected computers and servers that communicate using
+                standardized protocols to share information and resources.</p>
+            <ul>
+                <li>
+                    A global network of networks that connects computers and devices worldwide.
+                </li>
+                <li>Uses standardized rules called protocols (mainly TCP/IP) to send and receive data.</li>
+                <li>Often called the “network of networks.”</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <h2>How the Internet Works?</h2>
+            <ol>
+                <li>Your device → Local Network (Wi-Fi/Ethernet connects you to a router).</li>
+                <li>Router → ISP (Internet Service Provider) (your connection to the outside world).</li>
+                <li>ISP → Backbone (large, high-speed cables & data centers).</li>
+                <li>Routing — Data is split into small packets. Each packet travels through routers across networks to
+                    the destination address.</li>
+                <li>Destination Device — Packets are reassembled into the original file, page, or message.</li>
+            </ol>
+        </li>
+        <li>
+            <h2> What if the Internet Did Not Exist?</h2>
+            <ul>
+                <li>Information sharing would be slow and manual (USB drives, postal mail).</li>
+                <li>No real-time communication (email, chat, video calls).</li>
+                <li>Businesses, banking, education, government, healthcare would slow dramatically.</li>
+                <li>Global collaboration, online learning, and remote work would be much harder.</li>
+            </ul>
+        </li>
+        <li>
+            <h2>What is IP Address?</h2>
+            <ul>
+                <li> A unique number that identifies a device’s location on a network (like a postal address).</li>
+                <li> Routers and other devices use it to send data to the right destination across networks.</li>
+                <li> IP addresses can change (dynamic IP) depending on the network you’re connected to.</li>
+                <li>Example: 192.168.1.10 (IPv4) or 2001:db8::1 (IPv6).</li>
+                <li> Analogy: Like your house address in a city.</li>
+            </ul>
+        </li>
+
+        <li>
+            <h2>What is MAC Address?</h2>
+            <ul>
+                <li> A hardware identifier burned into your device’s network card (NIC). It’s permanent for that device.
+                </li>
+                <li> 6 groups of hexadecimal numbers, e.g., 00:1A:2B:3C:4D:5E.</li>
+                <li> Devices on the same local network use MAC addresses to deliver data to the correct piece of
+                    hardware.</li>
+                <li> Does not normally change (though it can be spoofed).</li>
+                <li>Analogy: Like your fingerprint or serial number — uniquely identifies the device itself.</li>
+            </ul>
+        </li>
+
+
+
+        <li>
+            <h2>What is Port Number?</h2>
+            <ul>
+                <li>Port numbers are numerical identifiers (0-65535) in computer networking that identify specific
+                    applications or services on a device. They work with IP addresses to direct network traffic to the
+                    correct service on a machine.</li>
+                <li>Helps direct incoming data to the correct application/service on the device.</li>
+                <li>Analogy: Like apartment numbers in a building. The IP address is the building, but the port number
+                    tells which apartment (service) the delivery goes to.</li>
+            </ul>
+        </li>
+
+
+        <li>
+            <h2>What is DNS?</h2>
+            <ul>
+                <li>DNS is the global, distributed system that translates the human-friendly domain names into the
+                    computer-friendly IP addresses. Without it, you'd have to memorize hundreds of IP addresses to
+                    browse the web.</li>
+                <li>When ARPANET (ancestor of the internet) was young, all hosts used a single file called hosts.txt to
+                    map names to IPs. As the network grew, this wasn’t scalable.
+                    DNS was invented (1983) to automate and distribute this process.
+
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h2>How DNS works?</h2>
+            When you type example.com in your browser:
+            <ol>
+
+                <li>Browser Cache Check – Browser first checks its own DNS cache.</li>
+                <li>OS Cache Check – If not found, it asks the operating system (Windows, Linux, etc.).</li>
+                <li>DNS Resolver (ISP) – The request goes to your Internet Service Provider’s DNS server (a “recursive
+                    resolver”).</li>
+                <li>Root DNS Servers – If resolver doesn’t know, it queries the root servers (there are 13 sets
+                    worldwide). Root servers direct it to the correct TLD server.</li>
+                <li>TLD DNS Servers – These know which authoritative server handles .com domains. They direct the
+                    resolver to the domain’s authoritative server.</li>
+                <li>Authoritative DNS Server – This server stores the actual IP address for the domain.</li>
+                <li>The IP address is returned to your browser.</li>
+                <li>Your browser connects to the IP address and loads the website.</li>
+            </ol>
+            All this happens in milliseconds.
+        </li>
+    </ol>
+    <button> <a href="home.html"><b>Lesson 0</b></a></button>
+    <button> <a href="lesson1.html"><b>Lesson 1</b></a></button>
+    <button> <a href="lesson2.html"><b>Lesson 2</b></a></button>
+    <button> <a href="lesson3.html"><b>Lesson 3</b></a></button>
+    <button> <a href="lesson4.html"><b>Lesson 4</b></a></button>
+    <button> <a href="lesson5.html"><b>Lesson 5</b></a></button>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson3</title>
+</head>
+
+<body>
+    <h1>About HTML Form </h1>
+    <ul>
+        The &ltform&gt tag in HTML is a container element used to create an interactive form on a webpage. It collects
+        user input through fields such as text boxes, radio buttons, checkboxes, and dropdowns, and then sends that data
+        to a server or script for processing. <br>
+        <br> Forms are essential for user interactions like registrations, logins, surveys, and feedback. The &ltform&gt
+        tag can include various attributes to define how the form behaves, such as the action (URL to send data), method
+        (GET or POST), and enctype (data encoding type). Proper use of forms enhances user experience and enables
+        dynamic web applications. <br>
+        <br> Example of a simple form structure: <br>
+        <code>
+            &ltform action="submit.php" method="post"&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&ltlabel for="name"&gt;Name:&lt/label&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&ltinput type="text" id="name" name="name" required&gt; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&ltinput type="submit" value="Submit"&gt; <br>
+            &lt/form&gt;
+        </code>
+        <br>
+        <br>
+
+
+        <li> Common form elements include: <br><br></li>
+
+        <ul>
+            <li> &ltinput&gt: For text fields, checkboxes, radio buttons, etc. </li>
+            <li>&lt;input&gt;: For text fields, checkboxes, radio buttons, etc.</li>
+            <li>&lt;textarea&gt;: For multi-line text input.</li>
+            <li>&lt;select&gt;: For dropdown menus.</li>
+            <li>&lt;button&gt;: For clickable buttons.</li>
+            <li>&lt;label&gt;: For labeling form elements.</li>
+            <li>&lt;fieldset&gt; and &lt;legend&gt;: For grouping related elements.</li>
+            <li>&lt;input type="submit"&gt;: For submitting the form.</li>
+            <li>&lt;input type="reset"&gt;: For resetting form fields.</li>
+            <li>&lt;input type="file"&gt;: For file uploads.</li>
+            <li>&lt;input type="hidden"&gt;: For hidden data.</li>
+            <li>&lt;input type="email"&gt;: For email input with validation.</li>
+            <li>&lt;input type="password"&gt;: For password input.</li>
+            <li>&lt;input type="date"&gt;: For date selection.</li>
+            <li>&lt;input type="number"&gt;: For numeric input.</li>
+            <li>&lt;input type="radio"&gt;: For selecting one option from a set.</li>
+            <li>&lt;input type="checkbox"&gt;: For selecting multiple options.</li>
+            <li>&lt;input type="url"&gt;: For URL input with validation.</li>
+            <li>&lt;input type="tel"&gt;: For telephone number input.</li>
+            <li>&lt;input type="color"&gt;: For color selection.</li>
+            <li>&lt;input type="range"&gt;: For selecting a value from a range (slider).</li>
+            <li>&lt;input type="search"&gt;: For search input fields.</li>
+            <li>&lt;input type="datetime-local"&gt;: For date and time input.</li>
+            <li>&lt;input type="month"&gt;: For month and year input.</li>
+            <li>&lt;input type="week"&gt;: For week and year input.</li>
+            <li>&lt;input type="time"&gt;: For time input.</li>
+            <li>&lt;input type="image"&gt;: For image-based submit buttons.</li>
+            <li>&lt;input type="button"&gt;: For generic buttons.</li>
+        </ul>
+
+
+        <br><br>
+        <li>
+            <h2>HTML Form with All Attributes (Displayed as Text)</h2>
+        </li>
+
+        <p>
+            &lt;form action="/submit" method="post" target="_blank" name="myForm" id="form1"
+            enctype="multipart/form-data" autocomplete="on"&gt; <br><br>
+
+            &nbsp;&nbsp;&lt;!-- Text Input --&gt; <br>
+            &nbsp;&nbsp;&lt;label for="username"&gt;Name:&lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;input type="text" id="username" name="username" placeholder="Enter name"
+            required&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;!-- Email Input --&gt; <br>
+            &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;input type="email" id="email" name="email" placeholder="Enter email" required&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;!-- Password Input --&gt; <br>
+            &nbsp;&nbsp;&lt;label for="password"&gt;Password:&lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;input type="password" id="password" name="password"&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;!-- Radio Buttons --&gt;<br>
+            &nbsp;&nbsp;Gender: <br>
+            &nbsp;&nbsp;&lt;input type="radio" name="gender" value="male"&gt; Male <br>
+            &nbsp;&nbsp;&lt;input type="radio" name="gender" value="female"&gt; Female <br><br>
+
+            &nbsp;&nbsp;&lt;!-- Checkboxes --&gt;<br>
+            &nbsp;&nbsp;Hobbies:<br>
+            &nbsp;&nbsp;&lt;input type="checkbox" name="hobby" value="reading"&gt; Reading <br>
+            &nbsp;&nbsp;&lt;input type="checkbox" name="hobby" value="sports"&gt; Sports <br><br>
+
+            &nbsp;&nbsp;&lt;!-- Dropdown --&gt;<br>
+            &nbsp;&nbsp;&lt;label for="country"&gt;Country:&lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;select id="country" name="country"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="india"&gt;India&lt;/option&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="usa"&gt;USA&lt;/option&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="uk"&gt;UK&lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;/select&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;!-- Textarea --&gt;<br>
+            &nbsp;&nbsp;&lt;label for="message"&gt;Message:&lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;textarea id="message" name="message" rows="4" cols="30"&gt;&lt;/textarea&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;!-- File Upload --&gt;<br>
+            &nbsp;&nbsp;&lt;input type="file" name="upload"&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;!-- Hidden Field --&gt;<br>
+            &nbsp;&nbsp;&lt;input type="hidden" name="hiddenData" value="123"&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;!-- Submit and Reset Buttons --&gt;<br>
+            &nbsp;&nbsp;&lt;input type="submit" value="Submit Form"&gt;<br>
+            &nbsp;&nbsp;&lt;input type="reset" value="Reset Form"&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;!-- Generic Button --&gt;<br>
+            &nbsp;&nbsp;&lt;input type="button" value="Click Me"&gt;<br><br>
+
+            &lt;/form&gt;
+        </p>
+
+        <li>
+            <h2>HTML Form with All Attributes (Output)</h2>
+        </li>
+
+        <form action="/submit" method="post" target="_blank" name="myForm" id="form1" enctype="multipart/form-data"
+            autocomplete="on">
+
+            <!-- Text Input -->
+            <label for="username">Name:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter name" required><br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+
+            <!-- Password Input -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+
+            <!-- Radio Buttons -->
+            Gender: <br>
+            <input type="radio" name="gender" value="male"> Male <br>
+            <input type="radio" name="gender" value="female"> Female <br><br>
+
+            <!-- Checkboxes -->
+            Hobbies:<br>
+            <input type="checkbox" name="hobby" value="reading"> Reading <br>
+            <input type="checkbox" name="hobby" value="sports"> Sports <br><br>
+
+            <!-- Dropdown -->
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select><br><br>
+
+            <!-- Textarea -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+            <!-- File Upload -->
+            <input type="file" name="upload"><br><br>
+
+            <!-- Hidden Field -->
+            <input type="hidden" name="hiddenData" value="123"><br><br>
+
+            <!-- Submit and Reset Buttons -->
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form"><br><br>
+
+            <!-- Generic Button -->
+            <input type="button" value="Click Me"><br><br>
+
+        </form>
+
+
+    </ul>
+    <button> <a href="home.html"><b>Lesson 1</b></a></button>
+    <button> <a href="lesson1.html"><b>Lesson 1</b></a></button>
+    <button> <a href="lesson2.html"><b>Lesson 2</b></a></button>
+    <button> <a href="lesson3.html"><b>Lesson 3</b></a></button>
+    <button> <a href="lesson4.html"><b>Lesson 4</b></a></button>
+    <button> <a href="lesson5.html"><b>Lesson 5</b></a></button>
+</body>
+
+</html>
