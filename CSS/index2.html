@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buttons</title>
+    <style>
+        .sub {
+            background-color: rgb(201, 0, 0);
+            color: white;
+            border: none;
+            height: 35px;
+            width: 105px;
+            border-radius: 2px;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 8px;
+            transition: background-color 0.2s ease , box-shadow .2s ease;
+           
+
+        }
+
+        .sub:hover {
+           background-color: rgb(143, 141, 141);
+          
+             box-shadow: 0 0 10px 5px rgba(19, 2, 2, 0.6);
+        }
+
+        .join {
+            background-color: rgb(238, 245, 250);
+            color: rgb(0, 0, 255);
+            border: 1px solid blue;
+            height: 35px;
+            width: 70px;
+            border-radius: 5px;
+            font-weight: 500;
+            margin: 8px;
+            transition: background-color 0.2s ease;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .join:hover {
+            background-color: rgb(0, 170, 255);
+        }
+        .join:active {
+            transform: scale(0.95);
+            background-color: rgb(0, 170, 255);
+        }
+
+        .tweet {
+            background-color: rgb(8, 148, 255);
+            color: rgb(246, 246, 255);
+            border: none;
+            height: 35px;
+            width: 100px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            margin: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .tweet:hover {
+            background-color: rgb(0, 86, 132);
+        }
+
+        .request {
+            background-color: black;
+            color: white;
+            border: 1px solid transparent;
+            height: 38px;
+            width: 115px;
+            font-weight: 500;
+            font-size: 15px;
+            transition: all .2s ease;
+
+
+        }
+
+        .request:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: black;
+
+            font-weight: 600;
+
+        }
+        .cart{
+            background-color: rgb(255, 216, 20);
+            border: none;
+            width: 250px;
+            height: 40px;
+            border-radius: 125px;
+            font-size: 18px;
+            transition: box-shadow 1s ease;
+            box-shadow:   inset -0px -0px  0px rgba(0, 0, 0, 0.193) ;
+
+        }
+        .cart:hover{
+             box-shadow:inset 390px 0px  1px rgba(21, 255, 0, 0.744) ;
+             
+        }
+        .cart:active{
+           
+            background-color: rgba(255, 0, 0, 0.596);
+             
+        }
+        .signup{
+            background-color: rgb(46, 164, 79);
+            color: white;
+            height: 40px;
+            width: 110px;
+            border-radius: 5px;
+           border: none;
+           font-weight: 600;
+           font-size: 15px;
+             transition: box-shadow .5s ease;
+             box-shadow:   inset 0px 0px 0px black;
+
+        }
+        .signup:hover{
+          box-shadow:   inset 110px 0px 1px black;
+        }
+        .getstarted{
+            background-color: rgb(121, 82, 179);
+            height: 50px;
+            width: 140px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            font-size: 15px;
+             transition: background-color .1s ease;
+        }
+        .getstarted:hover{
+             background-color: rgb(90, 66, 127);
+        }
+
+        .download{
+              background-color: rgb(255, 254, 254);
+            height: 50px;
+            color: rgb(108, 117, 125);
+            width: 150px;
+            border: .1px solid black;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 600;
+            margin-left: 5px;
+              transition: background-color .1s ease;
+        }
+        .download:hover{
+            background-color: rgba(185, 177, 177, 0.543)
+        }
+        .container{
+            margin: 10px;
+            padding: 15px;
+            background-color: rgb(197, 197, 197);
+            display: inline-block;
+            border-radius: 2px;
+            border: none;
+        }
+        .website{
+            background-color: rgba(10, 102, 194);
+            color: white;
+            height: 50px;
+          width: 350px;
+            border: none;
+            border-radius: 150px;
+            font-size: 20px;
+            font-weight: 600;
+            transition: background-color .1s ease;
+        }
+        .website:hover{
+               background-color: rgba(10, 76, 142, 0.742);
+        }
+        .save{
+              background-color: rgb(254, 254, 254);
+            color: rgb(8, 148, 255);
+            height: 50px;
+            padding: 10px;
+            width: 120px;
+            border: 1px solid rgb(0, 145, 255);
+            font-size: 19px;
+            font-weight: 500;
+       border-radius: 40px;
+        transition: background-color .1s ease;
+        }
+        .save:hover{
+             background-color: rgb(171, 170, 170);
+        }
+
+        img{
+            border: 2px solid black;
+            width: 200px;
+            height: 400px;
+            object-fit: contain;
+            
+        }
+        .img1{
+              border: 2px solid black;
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+        }
+        .img2{
+            border: 2px solid black;
+            width: 200px;
+            height: 400px;
+            object-fit: contain;
+            object-position: top;
+
+        }
+        .img3{
+            border: 2px solid black;
+            width: 200px;
+            height: 400px;
+            object-fit: contain;
+            object-position: bottom;
+
+        }
+
+         .img4{
+            border: 2px solid black;
+            border-radius: 20px;
+            object-fit: cover;
+
+        }
+        .img5{
+           
+            border: 2px solid black;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button class="sub">SUBSCRIBE</button>
+    <button class="join">JOIN</button>
+    <button class="tweet">Tweet</button>
+    <button class="request"> Request now</button>
+    <button class="cart">Add to Cart</button>
+    <button class="signup">Sign up</button>
+    <br>
+    <div class="container">
+        <button class="getstarted">Get started</button>
+        <button class="download">Download</button>
+    </div>
+    <div class="container">
+        <button class="website">Apply on company website</button>
+       <button class="save">Save</button>
+    
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuoTcZtXIhMCZ1yRCXVEj3vcziB_4VnPLeQ&s" alt="">
+        <img  class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuoTcZtXIhMCZ1yRCXVEj3vcziB_4VnPLeQ&s" alt="">
+           <img  class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuoTcZtXIhMCZ1yRCXVEj3vcziB_4VnPLeQ&s" alt="">
+               <img  class="img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuoTcZtXIhMCZ1yRCXVEj3vcziB_4VnPLeQ&s" alt="">
+                   <img  class="img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuoTcZtXIhMCZ1yRCXVEj3vcziB_4VnPLeQ&s" alt="">
+                       <img  class="img5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuoTcZtXIhMCZ1yRCXVEj3vcziB_4VnPLeQ&s" alt="">
+                           <img  class="img6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuoTcZtXIhMCZ1yRCXVEj3vcziB_4VnPLeQ&s" alt="">
+                               <img  class="img7" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuoTcZtXIhMCZ1yRCXVEj3vcziB_4VnPLeQ&s" alt="">
+</body>
+
+</html>
