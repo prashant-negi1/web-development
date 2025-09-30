@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+}
+.main{
+        height: 100vh;
+        width: 100vw;
+        
+        /* background: #8f8080; */
+    
+}
+.main1{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        
+        /* background: #8f8080; */
+    
+}
+.card{
+    height: 300px;
+    width: 230px;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    left: 50%;
+    /* transform: translate(-50%,-50%);  */
+    /* using tranform translate is different using translate seperately  */
+    translate: -50% -50%;
+       transition: z-index 2s ease, rotate 2s ease;
+    border-radius: 0px 20px 0px 20px ;
+    /* border-radius: 50px 5px 50px 5px; */
+    
+}
+.card1{
+    height: 300px;
+    width: 230px;
+    overflow: hidden;
+    border: 2px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    /* using tranform translate is different using translate seperately  */
+    /* translate: -50% -50%; */
+ translate: -50% -50%;
+       transition: z-index 2s ease, rotate 2s ease;
+    border-radius: 20px;
+    /* border-radius: 50px 5px 50px 5px; */
+    
+}
+#card1{
+    z-index: 4;
+    background: #000;
+}
+
+ #card5{
+    z-index: 4;
+    background: #000;
+}
+ #card6:hover{
+    z-index: 300;
+    rotate: 0deg;}
+
+#card2{
+z-index: 3;
+background: #9f2727;
+    rotate: -7deg;
+}
+#card2:hover{
+    z-index: 300;
+    rotate: 0deg;
+
+}
+#card6{
+z-index: 3;
+background: #9f2727;
+    rotate: -7deg;
+}
+#card3{
+    z-index: 2;
+background: #ffabab;
+
+    rotate: -14deg;
+}
+#card3:hover{
+    z-index: 300;
+    rotate: 0deg;
+
+
+}
+#card7{
+    z-index: 2;
+background: #ffabab;
+
+    rotate: -14deg;
+}
+ #card7:hover{
+    z-index: 300;
+    rotate: 0deg;}
+#card4{
+    z-index: 1;
+background: #236d5e;
+
+    rotate: -21deg;
+}
+#card4:hover{
+    rotate: 0deg;
+
+    z-index: 300;
+}
+
+#card8{
+    z-index: 1;
+background: #236d5e;
+
+    rotate: -21deg;
+}
+ #card8:hover{
+    z-index: 300;
+    rotate: 0deg;}
+
+img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+     
+    object-fit: center;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+<div id="card1" class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Light_from_Death_Note.jpg" alt="">
+</div>
+<div id="card2" class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Death_Note_Ryuk.jpg" alt="">
+</div>
+<div id="card3" class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/6c/L_from_Death_Note.png" alt="">
+</div>
+<div id="card4" class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/MellobyObata.png" alt="">
+</div>
+    </div>
+
+     <div class="main1">
+        
+<div id="card5" class="card1">
+    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRfTMzrVU9nuNSCOWts4K0I7fLlZI4JqK0RHSlq2JyGLSlsW5p" alt="">
+</div>
+<div id="card6" class="card1">
+    <img src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQVM9Hutlz6ZmWLHqLhL4efnAMeBQLk5DittFkWD40PYiPkc_7s__5iJP-4K8blbvLA" alt="">
+</div>
+<div id="card7" class="card1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XZ4yHyXJi_rHTqqZ9akIp6yRC5vEkY9EqlaZ4I75XFTy60Rv" alt="">
+</div>
+<div id="card8" class="card1">
+    <img src="https://static.wikia.nocookie.net/dragonball/images/c/c2/Piccolomanga.png/revision/latest/scale-to-width/360?cb=20160826150304" alt="">
+</div>
+    </div>
+</body>
+</html>
